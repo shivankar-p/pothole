@@ -214,7 +214,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--image', help='Path to the test images', default=None)
     parser.add_argument('--model_path', help='Path to the model directory', default='models/')
-    parser.add_argument('--model_name', help='Name of the model file', default='models/mask_rcnn_damage_0160.h5')
+    parser.add_argument('--model_name', help='Name of the model file', default='models/mask_rcnn_model.h5')
     parser.add_argument('--class_names', help='Path to the class labels', default='pothole_classes.txt')
     parser.add_argument('--mrcnn_visualize', help='Use the built-in visualize method', type=bool, default=False)
     parser.add_argument('--instance_segmentation', help='To toggle between semantic and instance segmentation',
