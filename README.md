@@ -24,10 +24,11 @@ pip install -r requirements.txt
 ```
 - Inside the models folder(in src) download the model file from this [link](https://drive.google.com/file/d/17IY3CnSz7AaIXwE7Q8RSkAV4_6UPiO6-/view)
 - Navigate back to src directory
-- For Inference on image run
+- For Inference on image run:
 ```console
 python3 mask.py --image <image-path>
 ```
+- For Inference on video run:
 ```console
 python3 mask.py --video <video-path>
 ```
