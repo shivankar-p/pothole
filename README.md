@@ -1,8 +1,20 @@
 # Pothole Severity Classification via Computer Vision
 ##### This whole Project was primarly build for the SMARTHATHON hackathon 2023 (January) theme 2 (Pothole Severity Classification via Computer Vision).
-## _Steps to run the code_
+
+## _Instructions to run the code_
 - Clone the repository.
-- 
+```console
+git clone https://github.com/shivankar-p/pothole.git
+```
+- Go into the repository
+```console
+cd pothole/src
+```
+- Install metashape standalone module wheel File
+```console
+!wget https://s3-eu-west-1.amazonaws.com/download.agisoft.com/Metashape-2.0.0-cp35.cp36.cp37.cp38-abi3-linux_x86_64.whl
+!python3 -m pip install Metashape-2.0.0-cp35.cp36.cp37.cp38-abi3-linux_x86_64.whl
+```
 
 ## Technologies used
 - python
