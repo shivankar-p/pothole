@@ -1,7 +1,7 @@
 # Pothole Severity Classification via Computer Vision
-##### This whole Project was primarly build for the SMARTHATHON hackathon 2023 (January) theme 2 (Pothole Severity Classification via Computer Vision).
+The Project was build for the SMARTATHON Challenge 2023 theme 2 (Pothole Severity Classification via Computer Vision).
 
-## _Instructions to run the code_
+## Instructions to run the code
 ### Run this [notebook](https://colab.research.google.com/drive/153bOqpGplhfOoz8-_T6x5dmdYNLEN5_l?usp=sharing).
  <pre>        (or)           </pre>
 ### Run it locally with the following instructions:
@@ -41,7 +41,7 @@ python3 mask.py --video <video-path>
 - matplotlib
 - numpy
 
-## [Video demo link](https://www.youtube.com/watch?v=AVYgmbHnvBQ)
+## [Demo video link](https://www.youtube.com/watch?v=AVYgmbHnvBQ)
 
 ## [Output video link](https://www.youtube.com/watch?v=9Fv6yXQz52g)
 
