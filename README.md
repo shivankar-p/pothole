@@ -2,7 +2,7 @@
 ##### This whole Project was primarly build for the SMARTHATHON hackathon 2023 (January) theme 2 (Pothole Severity Classification via Computer Vision).
 
 ## _Instructions to run the code_
-### Run this [notebook]().
+### Run this [notebook](https://colab.research.google.com/drive/153bOqpGplhfOoz8-_T6x5dmdYNLEN5_l?usp=sharing).
  <pre>        (or)           </pre>
 ### Run it locally with the following instructions:
 - Clone the repository.
