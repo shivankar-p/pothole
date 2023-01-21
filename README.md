@@ -43,7 +43,9 @@ python3 mask.py --video <video-path>
 
 ## [Video demo link]()
 
-## [Report link]()
+## [Output video link](https://www.youtube.com/watch?v=9Fv6yXQz52g)
+
+## [Report link](https://github.com/shivankar-p/pothole/blob/main/Project_Report.md)
 
 
 ## Notes
