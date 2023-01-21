@@ -46,7 +46,7 @@ python3 mask.py --video <video-path>
 ## [Output video link](https://www.youtube.com/watch?v=9Fv6yXQz52g)
 
 ## [Output Screenshots]
-![alt text](https://iiitbac-my.sharepoint.com/:i:/g/personal/karanjit_saha_iiitb_ac_in/EZKfJCO4JltMq7OQs6zliBoBqkJKj0p-R1vQokvy-m6pFQ?e=zv1xgY)
+![alt text](https://iiitbac-my.sharepoint.com/:f:/g/personal/karanjit_saha_iiitb_ac_in/EtG1l3Q86W9NlvQiNskgjLsBNpMf3Kst3dFNECB_BuQvrg?e=Kmfn0g)
 
 
 ## Team
