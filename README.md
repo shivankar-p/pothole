@@ -2,6 +2,9 @@
 ##### This whole Project was primarly build for the SMARTHATHON hackathon 2023 (January) theme 2 (Pothole Severity Classification via Computer Vision).
 
 ## _Instructions to run the code_
+### Run this [notebook]().
+            (or)
+### Run it locally with the following instructions:
 - Clone the repository.
 ```console
 git clone https://github.com/shivankar-p/pothole.git
@@ -19,7 +22,15 @@ python3 -m pip install Metashape-2.0.0-cp35.cp36.cp37.cp38-abi3-linux_x86_64.whl
 ```console
 pip install -r requirements.txt
 ```
-
+- Inside the models folder(in src) download the model file from this [link](https://drive.google.com/file/d/17IY3CnSz7AaIXwE7Q8RSkAV4_6UPiO6-/view)
+- Navigate back to src directory
+- For Inference on image run
+```console
+python3 mask.py --image <image-path>
+```
+```console
+python3 mask.py --video <video-path>
+```
 ## Technologies used
 - python
 - Agiosoft Metashape
