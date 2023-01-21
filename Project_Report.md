@@ -1,5 +1,5 @@
 # RoadVision
-ApexCoders presents its revolutionary solution using Computer Vision which completely automates the process of pothole detection and 3D reconstruction in a single pipeline and also provides the further steps required to aid the situation.
+ApexCoders presents its revolutionary solution using Computer Vision which completely automates the process of pothole detection and 3D reconstruction in a single pipeline for determining its severity and also provides further steps required to aid the situation.
 
 ## Abstract
 Our solution uses a two fold approach to tackle the given problem.  
@@ -21,7 +21,7 @@ Our solution uses a two fold approach to tackle the given problem.
 ## General Workflow
  ![Untitled Diagram drawio (2) drawio (1)](https://user-images.githubusercontent.com/77499650/213863844-e92af244-ea6f-4f9a-82b6-fffd110bf84c.png)  
 1. A sequence of motion pictures/frames or a video is given as a input to our Classifier which parallelly performs the following operations -   
-    - A dense point cloud is created by breaking the video at critical points. The process is further optimized by appropriately selecting just the sufficient number of frames required.  
+    - A dense point cloud is created by breaking the video at critical points. The process is further optimized by appropriately selecting just the sufficient number of frames required. 
     - The input is passed to our ML model which detects and masks the potholes, cracks and other damaged regions of the road.  
 2. For each output frame from our ML Model, the segmented pixels of each identified pothole in the frame are used to set markers in the dense point cloud that can track the corresponding pothole in the video and thus gives the overall 3D coordinates of the pixels of that pothole across all the frames. This helps in -  
     - Validating each pothole detected by the ML model by checking its elevation, depth, etc.  
