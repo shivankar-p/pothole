@@ -8,9 +8,9 @@ Our solution uses a two fold approach to tackle the given problem.
 
 ## Photogrammetry (3D Reconstruction) Approach
 1.) Alignment -  
-  a.) Determine the correct position and orientation of each image in a series of aerial images (video frames) and minimize the reprojection error.  
-  b.) Search for the feature points on the images and match them across images into tie points (sparse point cloud points)  
-  c.) Determine the position of the camera for each image and fine-tune camera calibration settings.  
+- Determine the correct position and orientation of each image in a series of aerial images (video frames) and minimize the reprojection error.  
+- Search for the feature points on the images and match them across images into tie points (sparse point cloud points)  
+- Determine the position of the camera for each image and fine-tune camera calibration settings.  
 2.) Sparse cloud is used for selecting stereo pairs (overlapping image pairs having sufficient number of common valid tie points).  
 3.) Depth maps are created for such overlapping pairs giving perspective from specific angles.   
 4.) Depth maps are merged together to form dense point cloud.  
