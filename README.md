@@ -1,45 +1,33 @@
-# Instance_Segmentation_Mask_RCNN
-To perform instance segmentation using Mask R-CNN and Python
+# Pothole Severity Classification via Computer Vision
+##### This whole Project was primarly build for the SMARTHATHON hackathon 2023 (January) theme 2 (Pothole Severity Classification via Computer Vision).
+## _Steps to run the code_
+- Clone the repository.
+- 
 
-## Overview
-I'll be using the Mask R-CNN architecture to perform instance segmentation on images, video and live web-cam feed.
-The Mask R-CNN architecture is an extension of the Faster R-CNN architecture. It uses ResNet101 as backbone(It also supports ResNet50).  
+## Technologies used
+- Python
+- Metashape API
+- OpenCV
+- Tensorflow
+- Keras
+- MatPlotLib
+- 
 
-You can find more details about the working and functionality of the code from my article given [here](https://towardsdatascience.com/image-segmentation-using-mask-r-cnn-8067560ed773).
+## Team
+- [Shivankar Pilligundla](https://www.linkedin.com/in/shivankar-pilligundla-a1112a201/)
+- [Srinivas Manda](https://www.linkedin.com/in/srinivas-manda-41a302224/)
+- [Hardik Khandelwal](https://www.linkedin.com/in/hardik-khandelwal-533599205/)
+- [Karanjit Saha](https://www.linkedin.com/in/karanjit-saha-65a02122b/)
+- [Netradeepak Chinchwadkar](https://www.linkedin.com/in/netradeepak-chinchwadkar-30728a201/)
+- [Abhinav Mahajan](https://www.linkedin.com/in/abhinav-mahajan-727068233/)
 
-<img src ='my_images/test_image_1.jpg' width = 200> <img src ='my_images/result_1.png' width = 200>
+## References Used
+- Public Works Department of Malaysia, 1992. A Guideto Visual Assessment of Flexible Pavement SurfaceConditions, Public Works Department, Malaysia.
 
-## Arguments
-```
-    --image                 ---->   Path to the test image
-    --model_path            ---->   Path to the model directory
-    --model_name            ---->   Name of the model file 
-    --class_names           ---->   Path to the class labels 
-    --mrcnn_visualize       ---->   Use the built-in visualize method  
-    --instance_segmentation ---->   To toggle between semantic and instance segmentation             
-    --draw_bbox             ---->   Draw the bounding box with class labels  
-    --camera                ---->   Perform live detection  
-    --video                 ---->   Path to video file
-    --save_enable           ---->   Enable to save processed image or video  
-```
+## [Video demo link]()
 
-## Usage
-* For testing on images  
-`python mask.py --image <path to image>  --save_enable True/False --model_path <path to the model directory> --model_name <name of the model> --class_names <path to the class labels file>`
+## [Report link]()
 
-* For testing on videos  
-`python mask.py --video <path to video file> --save_enable True/False --model_path <path to the model directory> --model_name <name of the model> --class_names <path to the class labels file>`
-
-* For testing on web-cam feed  
-`python mask.py --camera True --model_path <path to the model directory> --model_name <name of the model> --class_names <path to the class labels file>`
-
-The program by default looks for the model in the `models` folder and specifically for the `mask_rcnn_coco.h5` file.
-
-## Sample Outputs
-<img src ='my_images/test_image_3.jpg' width = 350> <img src ='my_images/result_3.png' width = 350>  
-<img src ='my_images/test_image_4.jpg' width = 350> <img src ='my_images/result_4.png' width = 350>  
-<img src ='my_images/test_image_5.jpg' width = 350> <img src ='my_images/result_5.png' width = 350>
-<img src ='my_images/test_image_6.jpg' width = 350> <img src ='my_images/result_6.png' width = 350>
 
 ## Notes
 * Do note that the code for Mask R-CNN was obtained from Matterport's [repository](https://github.com/matterport/Mask_RCNN).
