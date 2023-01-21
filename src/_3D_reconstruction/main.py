@@ -14,7 +14,7 @@ doc.save(path = "full_vid.psx")
 
 chunk = doc.addChunk()
 
-vid_path = "../First_Dataset.mp4"
+vid_path = "../Videos/First_Dataset.mp4"
 img_path = "Images/GP1_{filenum}.png"
 
 
