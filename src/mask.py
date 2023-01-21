@@ -176,7 +176,7 @@ def perform_inference_video(use_camera, video_path, model, colors, classes, draw
         
         
         if save_enable and video_flag:
-            out = cv2.VideoWriter("out.mp4", cv2.VideoWriter_fourcc(*'MP4V'), 3,
+            out = cv2.VideoWriter("model_out.mp4", cv2.VideoWriter_fourcc(*'MP4V'), 3,
                                   (frame.shape[1], frame.shape[0]))
             video_flag = False
 
