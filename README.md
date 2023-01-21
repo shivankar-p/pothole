@@ -41,20 +41,10 @@ python3 mask.py --video <video-path>
 - matplotlib
 - numpy
 
-## [Video demo link]()
+## [Video demo link](https://www.loom.com/share/7d5adefb710f417ea959711a2066a547)
 
 ## [Output video link](https://www.youtube.com/watch?v=9Fv6yXQz52g)
 
-## [Report link](https://github.com/shivankar-p/pothole/blob/main/Project_Report.md)
-
-
-## Notes
-* Do note that the code for Mask R-CNN was obtained from Matterport's [repository](https://github.com/matterport/Mask_RCNN).
-* You can find the trained model at [model Google Drive link](https://drive.google.com/file/d/17IY3CnSz7AaIXwE7Q8RSkAV4_6UPiO6-/view)
-
-
-## References Used
-- Public Works Department of Malaysia, 1992. A Guideto Visual Assessment of Flexible Pavement SurfaceConditions, Public Works Department, Malaysia.
 
 ## Team
 - [Shivankar Pilligundla](https://www.linkedin.com/in/shivankar-pilligundla-a1112a201/)
