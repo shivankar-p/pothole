@@ -41,7 +41,7 @@ python3 mask.py --video <video-path>
 - matplotlib
 - numpy
 
-## [Video demo link](https://www.loom.com/share/7d5adefb710f417ea959711a2066a547)
+## [Video demo link](https://www.youtube.com/watch?v=AVYgmbHnvBQ)
 
 ## [Output video link](https://www.youtube.com/watch?v=9Fv6yXQz52g)
 
