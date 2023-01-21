@@ -5,13 +5,13 @@
 - 
 
 ## Technologies used
-- Python
-- Metashape API
-- OpenCV
-- Tensorflow
-- Keras
-- MatPlotLib
-- 
+- python
+- Agiosoft Metashape
+- openCV
+- tensorflow
+- keras
+- matplotlib
+- numpy
 
 ## Team
 - [Shivankar Pilligundla](https://www.linkedin.com/in/shivankar-pilligundla-a1112a201/)
@@ -31,8 +31,5 @@
 
 ## Notes
 * Do note that the code for Mask R-CNN was obtained from Matterport's [repository](https://github.com/matterport/Mask_RCNN).
-* For more details regarding the Mask RCNN implementation visit the link given or read the MRCNN_README file. The files mask.py, mask_colab.py and Mask_On_Colab.ipynb, models, my_images are mine. 
-* You can find the model at [model Google Drive link](https://drive.google.com/file/d/17IY3CnSz7AaIXwE7Q8RSkAV4_6UPiO6-/view)
+* You can find the trained model at [model Google Drive link](https://drive.google.com/file/d/17IY3CnSz7AaIXwE7Q8RSkAV4_6UPiO6-/view)
 
-
-Star ⭐️ this repo if you find it helpful :)
