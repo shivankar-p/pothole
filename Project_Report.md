@@ -7,7 +7,7 @@ Our solution uses a two fold approach to tackle the given problem.
 2.) Generation of 3D spatial data : For 3D reconstruction, we have used Agisoft Metashape - a tool for photogrammetric processing. It is integrated with our general pipeline using a python script which interacts with the tool and automates the process of getting pothole dimensions and severity estimation.  
 
 ## Photogrammetry (3D Reconstruction) Approach
-![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/77499650/213862716-e4d6749f-7c53-4533-9532-f413450f133b.png)
+![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/77499650/213862716-e4d6749f-7c53-4533-9532-f413450f133b.png)  
 1. Alignment -  
 - Determine the correct position and orientation of each image in a series of aerial images (video frames) and minimize the reprojection error.  
 - Search for the feature points on the images and match them across images into tie points (sparse point cloud points)  
@@ -16,10 +16,10 @@ Our solution uses a two fold approach to tackle the given problem.
 3. Depth maps are created for such overlapping pairs giving perspective from specific angles.   
 4. Depth maps are merged together to form dense point cloud.  
 5. Finally a surface in 3D (mesh) or 2.5D is created for modeling purposes and visualization.  
-![Screenshot 2023-01-21 at 2 17 47 PM](https://user-images.githubusercontent.com/77499650/213862742-656bb652-b56f-40f3-a431-7e39c05a81ce.png)
+![Screenshot 2023-01-21 at 2 17 47 PM](https://user-images.githubusercontent.com/77499650/213862742-656bb652-b56f-40f3-a431-7e39c05a81ce.png)  
 
 ## General Workflow
-![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/77499650/213862754-1e3b8c56-6486-44e5-a73e-d404f525f793.png)
+![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/77499650/213862754-1e3b8c56-6486-44e5-a73e-d404f525f793.png)  
 1. A sequence of motion pictures/frames or a video is given as a input to our Classifier which parallelly performs the following operations -   
 - A dense point cloud is created by breaking the video at critical points. The process is further optimized by appropriately selecting just the sufficient number of frames required.  
 - The input is passed to our ML model which detects and masks the potholes, cracks and other damaged regions on the road.  
@@ -28,7 +28,7 @@ Our solution uses a two fold approach to tackle the given problem.
 - Calculating the average depth, perimeter and surface area of each valid pothole using the 3D coordinates from the reconstructed point cloud. These will be normalized to the centimeter scale, which shall be used to calculate pothole severity.  
 3. It is possible that the road surface itself has different elevation at different points. Keeping that in mind, the depth of each pothole is calculated with respect to the elevation of the road bounding it, rather than using a base elevation for the entire 3D mesh.  
 4. After getting all the physical properties of each pothole in a frame, the below metric is used to calculate its severity/magnitude[1]. Potholes with different levels of severity are masked accordingly. Specific road segments with a large number of potholes of high severity are also marked in the final output video.  
-![Screenshot 2023-01-19 at 2 21 14 PM](https://user-images.githubusercontent.com/77499650/213862773-f4b4c0c3-3299-4f5b-a5bc-da2b98cdfbca.png)
+![Screenshot 2023-01-19 at 2 21 14 PM](https://user-images.githubusercontent.com/77499650/213862773-f4b4c0c3-3299-4f5b-a5bc-da2b98cdfbca.png)  
 
 ## Cost and Performance Efficiency
 - In order to speed up the process of computation, we sample the pixels by using the Markov Chain Monte-Carlo technique which leverages the frequency distribution of pixels so as to reduce the number of pixels we need to process.   
@@ -37,7 +37,7 @@ Our solution uses a two fold approach to tackle the given problem.
 ## Relevance and City Planning
 - Our solution is capable of being deployed on edge (NVIDIA Jetson Nano or a more advanced Jetson TX2) and thus can mark the damaged areas on the spot through any IoT devices feeding in camera footage. Furthermore, no other input is required such as laser calibrated surface profiling or ultrasonic sensor data, thereby cutting down the cost of hardware and time spent for doing labor as our entire solution relies on automation. Therefore, our solution is a great alternative for Mobile Lidar related technologies and requires almost no human intervention as even the camera orientation/calibration is determined during the reconstruction process.  
 - Furthermore, our solution proposes the following scheme to categorize potholes based on the response times they need for repair/reconstruction. This helps in establishing the most urgent and problematic potholes and road areas. The scheme takes into account the severity as well as the importance of the road estimated by the frequency of its use in a qualitative manner.  
-![Screenshot 2023-01-20 at 12 11 48 AM](https://user-images.githubusercontent.com/77499650/213862785-e27e000e-5a22-4122-873f-a72dae5703a3.png)
+![Screenshot 2023-01-20 at 12 11 48 AM](https://user-images.githubusercontent.com/77499650/213862785-e27e000e-5a22-4122-873f-a72dae5703a3.png)  
 Emergency: 2 hour response (Road Collapse)  
 Category 1: Repair within 5 days  
 Category 2: Repair is required within four calendar months  
