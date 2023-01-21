@@ -7,7 +7,7 @@ Our solution uses a two fold approach to tackle the given problem.
 2. Generation of 3D spatial data : For 3D reconstruction, we have used Agisoft Metashape - a tool for photogrammetric processing. It is integrated with our general pipeline using a python script which interacts with the tool and automates the process of getting pothole dimensions and severity estimation.  
 
 ## Photogrammetry (3D Reconstruction) Approach
-![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/77499650/213862716-e4d6749f-7c53-4533-9532-f413450f133b.png)  
+![Untitled Diagram drawio (2) drawio (1) (1)](https://user-images.githubusercontent.com/77499650/213863827-41cba4b6-4099-42be-bce7-f433db6b4209.png)  
 1. Alignment -  
     - Determine the correct position and orientation of each image in a series of aerial images (video frames) and minimize the reprojection error.  
     - Search for the feature points on the images and match them across images into tie points (sparse point cloud points)  
@@ -19,7 +19,7 @@ Our solution uses a two fold approach to tackle the given problem.
 ![Screenshot 2023-01-21 at 2 17 47 PM](https://user-images.githubusercontent.com/77499650/213862742-656bb652-b56f-40f3-a431-7e39c05a81ce.png)  
 
 ## General Workflow
-![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/77499650/213862754-1e3b8c56-6486-44e5-a73e-d404f525f793.png)  
+ ![Untitled Diagram drawio (2) drawio (1)](https://user-images.githubusercontent.com/77499650/213863844-e92af244-ea6f-4f9a-82b6-fffd110bf84c.png)  
 1. A sequence of motion pictures/frames or a video is given as a input to our Classifier which parallelly performs the following operations -   
     - A dense point cloud is created by breaking the video at critical points. The process is further optimized by appropriately selecting just the sufficient number of frames required.  
     - The input is passed to our ML model which detects and masks the potholes, cracks and other damaged regions on the road.  
