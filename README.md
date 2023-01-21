@@ -3,7 +3,7 @@
 
 ## _Instructions to run the code_
 ### Run this [notebook]().
-            (or)
+ <pre>        (or)           </pre>
 ### Run it locally with the following instructions:
 - Clone the repository.
 ```console
@@ -40,17 +40,6 @@ python3 mask.py --video <video-path>
 - matplotlib
 - numpy
 
-## Team
-- [Shivankar Pilligundla](https://www.linkedin.com/in/shivankar-pilligundla-a1112a201/)
-- [Hardik Khandelwal](https://www.linkedin.com/in/hardik-khandelwal-533599205/)
-- [Karanjit Saha](https://www.linkedin.com/in/karanjit-saha-65a02122b/)
-- [Netradeepak Chinchwadkar](https://www.linkedin.com/in/netradeepak-chinchwadkar-30728a201/)
-- [Abhinav Mahajan](https://www.linkedin.com/in/abhinav-mahajan-727068233/)
-- [Srinivas Manda](https://www.linkedin.com/in/srinivas-manda-41a302224/)
-
-## References Used
-- Public Works Department of Malaysia, 1992. A Guideto Visual Assessment of Flexible Pavement SurfaceConditions, Public Works Department, Malaysia.
-
 ## [Video demo link]()
 
 ## [Report link]()
@@ -59,4 +48,19 @@ python3 mask.py --video <video-path>
 ## Notes
 * Do note that the code for Mask R-CNN was obtained from Matterport's [repository](https://github.com/matterport/Mask_RCNN).
 * You can find the trained model at [model Google Drive link](https://drive.google.com/file/d/17IY3CnSz7AaIXwE7Q8RSkAV4_6UPiO6-/view)
+
+
+## References Used
+- Public Works Department of Malaysia, 1992. A Guideto Visual Assessment of Flexible Pavement SurfaceConditions, Public Works Department, Malaysia.
+
+## Team
+- [Shivankar Pilligundla](https://www.linkedin.com/in/shivankar-pilligundla-a1112a201/)
+- [Hardik Khandelwal](https://www.linkedin.com/in/hardik-khandelwal-533599205/)
+- [Karanjit Saha](https://www.linkedin.com/in/karanjit-saha-65a02122b/)
+- [Netradeepak Chinchwadkar](https://www.linkedin.com/in/netradeepak-chinchwadkar-30728a201/)
+- [Abhinav Mahajan](https://www.linkedin.com/in/abhinav-mahajan-727068233/)
+- [Srinivas Manda](https://www.linkedin.com/in/srinivas-manda-41a302224/)
+
+
+
 
