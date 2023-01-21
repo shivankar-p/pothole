@@ -15,3 +15,32 @@ Our solution uses a two fold approach to tackle the given problem.
 3. Depth maps are created for such overlapping pairs giving perspective from specific angles.   
 4. Depth maps are merged together to form dense point cloud.  
 5. Finally a surface in 3D (mesh) or 2.5D is created for modeling purposes and visualization.  
+
+## General Workflow
+1. A sequence of motion pictures/frames or a video is given as a input to our Classifier which parallelly performs the following operations -   
+- A dense point cloud is created by breaking the video at critical points. The process is further optimized by appropriately selecting just the sufficient number of frames required.  
+- The input is passed to our ML model which detects and masks the potholes, cracks and other damaged regions on the road.  
+2. For each output frame from our ML Model, the segmented pixels of each identified pothole in the frame are used to set markers in the dense point cloud that can track the corresponding pothole in the video and thus gives the overall 3D coordinates of the pixels of that pothole across all the frames. This helps in -  
+- Validating each pothole detected by the ML model by checking its elevation, depth, etc.  
+- Calculating the average depth, perimeter and surface area of each valid pothole using the 3D coordinates from the reconstructed point cloud. These will be normalized to the centimeter scale, which shall be used to calculate pothole severity.  
+3. It is possible that the road surface itself has different elevation at different points. Keeping that in mind, the depth of each pothole is calculated with respect to the elevation of the road bounding it, rather than using a base elevation for the entire 3D mesh.  
+4. After getting all the physical properties of each pothole in a frame, the below metric is used to calculate its severity/magnitude[1]. Potholes with different levels of severity are masked accordingly. Specific road segments with a large number of potholes of high severity are also marked in the final output video.  
+
+## Cost and Performance Efficiency
+- In order to speed up the process of computation, we sample the pixels by using the Markov Chain Monte-Carlo technique which leverages the frequency distribution of pixels so as to reduce the number of pixels we need to process.   
+- On the prototype level, We are able to process 3 - 4 frames per second on a standard RTX 3060 for no cost. The processing speed can be increased exponentially by using industry standard hardware.  
+
+## Relevance and City Planning
+- Our solution is capable of being deployed on edge (NVIDIA Jetson Nano or a more advanced Jetson TX2) and thus can mark the damaged areas on the spot through any IoT devices feeding in camera footage. Furthermore, no other input is required such as laser calibrated surface profiling or ultrasonic sensor data, thereby cutting down the cost of hardware and time spent for doing labor as our entire solution relies on automation. Therefore, our solution is a great alternative for Mobile Lidar related technologies and requires almost no human intervention as even the camera orientation/calibration is determined during the reconstruction process.  
+- Furthermore, our solution proposes the following scheme to categorize potholes based on the response times they need for repair/reconstruction. This helps in establishing the most urgent and problematic potholes and road areas. The scheme takes into account the severity as well as the importance of the road estimated by the frequency of its use in a qualitative manner.  
+
+Emergency: 2 hour response (Road Collapse)  
+Category 1: Repair within 5 days  
+Category 2: Repair is required within four calendar months  
+
+## Future Scope
+1.) Our solution can be easily scaled up to run on thermal and satellite imagery as well which are quite often used in city planning.  
+2.) It can be integrated with navigation applications (such as Google apps, Waze etc.) to alert the users and can be used for optimal path selection thereby increasing the apps reliability and help in accident prevention.  
+
+## REFERENCES
+[1] Public Works Department of Malaysia, 1992. A Guide to Visual Assessment of Flexible Pavement SurfaceConditions, Public Works Department, Malaysia.
