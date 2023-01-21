@@ -7,7 +7,7 @@ Our solution uses a two fold approach to tackle the given problem.
 2. Generation of 3D spatial data : For 3D reconstruction, we have used Agisoft Metashape - a tool for photogrammetric processing. It is integrated with our general pipeline using a python script which interacts with the tool and automates the process of getting pothole dimensions and severity estimation.  
 
 ## Photogrammetry (3D Reconstruction) Approach
-![Untitled Diagram drawio (2) drawio (1) (1)](https://user-images.githubusercontent.com/77499650/213863827-41cba4b6-4099-42be-bce7-f433db6b4209.png)  
+![Untitled Diagram drawio (1) drawio (1)](https://user-images.githubusercontent.com/77499650/213868498-555c6187-4299-4ede-b70d-696845cd6205.png)  
 1. Alignment -  
     - Determine the correct position and orientation of each image in a series of aerial images (video frames) and minimize the reprojection error.  
     - Search for the feature points on the images and match them across images into tie points (sparse point cloud points)  
