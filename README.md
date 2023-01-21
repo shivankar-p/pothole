@@ -45,12 +45,12 @@ python3 mask.py --video <video-path>
 
 ## [Output video link](https://www.youtube.com/watch?v=9Fv6yXQz52g)
 
-## [Output Screenshots]
+## Output Screenshots
 <img width="1728" alt="3" src="https://user-images.githubusercontent.com/77498897/213882123-7f482699-c2c1-4504-b099-7ff8c6a82148.png">
 <img width="1728" alt="1" src="https://user-images.githubusercontent.com/77498897/213882126-17d42982-7f3c-4a50-a3dc-2dafd7abf287.png">
-![4](https://user-images.githubusercontent.com/77498897/213882194-c3789999-0370-4f9c-81da-136626186169.jpg)
-![5](https://user-images.githubusercontent.com/77498897/213882195-53395cdd-ce91-468b-a5b5-24fec70ea8e4.jpg)
-![6](https://user-images.githubusercontent.com/77498897/213882196-274a52bb-3a2d-4699-a53e-f338135ab235.jpg)
+<img src="https://user-images.githubusercontent.com/77498897/213882194-c3789999-0370-4f9c-81da-136626186169.jpg">
+<img src="https://user-images.githubusercontent.com/77498897/213882195-53395cdd-ce91-468b-a5b5-24fec70ea8e4.jpg">
+<img src="https://user-images.githubusercontent.com/77498897/213882196-274a52bb-3a2d-4699-a53e-f338135ab235.jpg">
 
 
 ## Team
