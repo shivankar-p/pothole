@@ -43,8 +43,8 @@ Category 1: Repair within 5 days
 Category 2: Repair is required within four calendar months  
 
 ## Future Scope
-1.) Our solution can be easily scaled up to run on thermal and satellite imagery as well which are quite often used in city planning.  
-2.) It can be integrated with navigation applications (such as Google apps, Waze etc.) to alert the users and can be used for optimal path selection thereby increasing the apps reliability and help in accident prevention.  
+1. Our solution can be easily scaled up to run on thermal and satellite imagery as well which are quite often used in city planning.  
+2. It can be integrated with navigation applications (such as Google apps, Waze etc.) to alert the users and can be used for optimal path selection thereby increasing the apps reliability and help in accident prevention.  
 
 ## REFERENCES
 [1] Public Works Department of Malaysia, 1992. A Guide to Visual Assessment of Flexible Pavement SurfaceConditions, Public Works Department, Malaysia.
