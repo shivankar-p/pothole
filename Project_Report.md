@@ -36,7 +36,7 @@ Our solution uses a two fold approach to tackle the given problem.
 
 ## Relevance and City Planning
 - Our solution is capable of being deployed on edge (NVIDIA Jetson Nano or a more advanced Jetson TX2) and thus can mark the damaged areas on the spot through any IoT devices feeding in camera footage. Furthermore, no other input is required such as laser calibrated surface profiling or ultrasonic sensor data, thereby cutting down the cost of hardware and time spent for doing labor as our entire solution relies on automation. Therefore, our solution is a great alternative for Mobile Lidar related technologies and requires almost no human intervention as even the camera orientation/calibration is determined during the reconstruction process.  
-- Furthermore, our solution proposes the following scheme to categorize potholes based on the response times they need for repair/reconstruction. This helps in establishing the most urgent and problematic potholes and road areas. The scheme takes into account the severity as well as the importance of the road estimated by the frequency of its use in a qualitative manner.    &nbsp;&nbsp;&nbsp;&nbsp;
+- Furthermore, our solution proposes the following scheme to categorize potholes based on the response times they need for repair/reconstruction. This helps in establishing the most urgent and problematic potholes and road areas. The scheme takes into account the severity as well as the importance of the road estimated by the frequency of its use in a qualitative manner.    
 ![Screenshot 2023-01-20 at 12 11 48 AM](https://user-images.githubusercontent.com/77499650/213862785-e27e000e-5a22-4122-873f-a72dae5703a3.png)&nbsp;&nbsp;&nbsp;  
 Emergency: 2 hour response (Road Collapse)  
 Category 1: Repair within 5 days  
