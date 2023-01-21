@@ -10,10 +10,14 @@ git clone https://github.com/shivankar-p/pothole.git
 ```console
 cd pothole/src
 ```
-- Install metashape standalone module wheel File
+- Linux - Install metashape standalone module wheel File.(For other os find wheel file [here](https://www.agisoft.com/downloads/installer/)
 ```console
-!wget https://s3-eu-west-1.amazonaws.com/download.agisoft.com/Metashape-2.0.0-cp35.cp36.cp37.cp38-abi3-linux_x86_64.whl
-!python3 -m pip install Metashape-2.0.0-cp35.cp36.cp37.cp38-abi3-linux_x86_64.whl
+wget https://s3-eu-west-1.amazonaws.com/download.agisoft.com/Metashape-2.0.0-cp35.cp36.cp37.cp38-abi3-linux_x86_64.whl
+python3 -m pip install Metashape-2.0.0-cp35.cp36.cp37.cp38-abi3-linux_x86_64.whl
+```
+- Install other required packages
+```console
+pip install -r requirements.txt
 ```
 
 ## Technologies used
