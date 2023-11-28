@@ -59,7 +59,7 @@ python3 mask.py --video <video-path>
 - [Karanjit Saha](https://www.linkedin.com/in/karanjit-saha-65a02122b/)
 - [Netradeepak Chinchwadkar](https://www.linkedin.com/in/netradeepak-chinchwadkar-30728a201/)
 - [Abhinav Mahajan](https://www.linkedin.com/in/abhinav-mahajan-727068233/)
-- [Srinivas Manda](https://www.linkedin.com/in/srinivas-manda-41a302224/)
+- [Srinivas Manda](https://www.linkedin.com/in/srinivasa-bhargava-manda)
 
 
 
